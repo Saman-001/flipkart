@@ -90,7 +90,7 @@ def index():
                 writer.writerows(reviews)
 
                
-            client = pymongo.MongoClient("mongodb+srv://abc:abc@cluster0.lj6xm5o.mongodb.net/?retryWrites=true&w=majority")
+            client = pymongo.MongoClient("mongodb+srv://saman_323:saman323@cluster0.9i3r4fz.mongodb.net/?retryWrites=true&w=majority")
             db = client['flipkart_scrap']
             review_col = db['review_scrap_data']
             review_col.insert_many(reviews)
